@@ -1,0 +1,93 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "be817f7c8f0e7cf178d19c8ff0e28361",
+    "packages": [
+        {
+            "name": "datagutten/adtools",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datagutten/adtools.git",
+                "reference": "fa72e712c979a68dcb23a60809061b5a60da5ef7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datagutten/adtools/zipball/fa72e712c979a68dcb23a60809061b5a60da5ef7",
+                "reference": "fa72e712c979a68dcb23a60809061b5a60da5ef7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gettext": "*",
+                "ext-ldap": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "adtools.php",
+                    "adtools_groups.php",
+                    "adtools_utils.php",
+                    "LdapException.php",
+                    "MultipleHitsException.php",
+                    "NoHitsException.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "datagutten",
+                    "email": "datagutten@datagutten.net"
+                }
+            ],
+            "description": "Tools for working with Active Directory from PHP",
+            "time": "2019-06-07T12:06:49+00:00"
+        },
+        {
+            "name": "datagutten/logger",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/datagutten/logger.git",
+                "reference": "5858a81bd8584f49e0443f3d05ea0d668ca4b15b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/datagutten/logger/zipball/5858a81bd8584f49e0443f3d05ea0d668ca4b15b",
+                "reference": "5858a81bd8584f49e0443f3d05ea0d668ca4b15b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "logger.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "datagutten",
+                    "email": "datagutten@datagutten.net"
+                }
+            ],
+            "description": "A simple logger",
+            "time": "2019-06-05T15:45:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

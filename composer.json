@@ -1,0 +1,20 @@
+{
+    "name": "datagutten/password-reset-voucher",
+    "description": "A tool to reset AD user passwords using a provided one-time code",
+    "type": "project",
+    "require": {
+        "datagutten/adtools": "^1.2",
+        "datagutten/logger": "^1.0"
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "datagutten",
+            "email": "datagutten@datagutten.net"
+        }
+    ],
+    "autoload": {
+        "classmap": ["reset_password.php"],
+        "files": ["password_generator.php", "check_voucher.php"]
+    }
+}
