@@ -13,6 +13,8 @@ class VouchersTest extends TestCase
 {
     public function setUp(): void
     {
+        if(!file_exists(__DIR__.'/../vouchers'))
+            mkdir(__DIR__.'/../vouchers');
         copy(__DIR__.'/test_data/test_vouchers.txt', __DIR__.'/../vouchers/test_vouchers.txt');
     }
 
