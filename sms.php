@@ -6,5 +6,5 @@
  * Time: 19.40
  */
 require 'vendor/autoload.php';
-$reset=new reset_password();
+$reset=new \askommune\PasswordResetVoucher\ResetPassword();
 echo $reset->reset_password_sms();

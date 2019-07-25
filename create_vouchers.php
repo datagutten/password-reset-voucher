@@ -5,24 +5,8 @@
  * Date: 29.04.2019
  * Time: 16.57
  */
+require 'vendor/autoload.php';
 
-/**
- * Generate a random password
- * @param int $length Password length
- * @return string Generated password
- */
-function random($length = 8)
-{
-    //http://php.net/manual/en/function.mt-rand.php#106645
-    $chars = 'bcdfghjklmnprstvwxzaeiou';
-    $result='';
-    for ($p = 0; $p < $length; $p++)
-    {
-        $result .= ($p%2) ? $chars[mt_rand(19, 23)] : $chars[mt_rand(0, 18)];
-    }
-
-    return $result;
-}
 //Lag koder for 10 sider med 84 koder per side
 if(isset($argv[1]))
     $pages=$argv[1];
@@ -31,7 +15,7 @@ else
 $vouchers = '';
 for($i=1; $i<=84*$pages; $i++)
 {
-    $vouchers.= random(4).mt_rand(111,999)."\n";
+    $vouchers.= \askommune\PasswordResetVoucher\Vouchers::random(4).mt_rand(111,999)."\n";
 }
 $file=sprintf('vouchers/%s.txt', $argv[2]);
 
