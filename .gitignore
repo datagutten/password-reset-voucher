@@ -1,3 +1,5 @@
 vouchers
 /vendor/
 .idea
+clover.xml
+coverage_html
