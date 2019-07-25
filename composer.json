@@ -3,7 +3,7 @@
     "description": "A tool to reset AD user passwords using a provided one-time code",
     "type": "project",
     "require": {
-        "datagutten/adtools": "dev-master",
+        "datagutten/adtools": "^2.0",
         "datagutten/logger": "^1.0",
         "php": ">=7.2"
     },
